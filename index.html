@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <title>IG API</title>
+</head>
+<body>
+    
+    <script type="text/javascript">
+        $(function() {
+            const token = "IGQVJWOFhGRE9HRzA3bW9JajVYNXJBODg3R3FzdWFLSW9vUmNhZAjlqN2tnNEhpaXE4bWYxU1ZANeVpvNW1rRXdna1NhSlRweEZAIMXlDQkxMSlRJckcxcmQyUlRDXzFlcFluMG9jNWlPTUk4cDlFc0ZAsWAZDZD"
+            const url = "https://graph.facebook.com/me/media?access_token=" + token + "&fields=media_url,media_type,caption,permalink";
+        
+            $.get(url).then(function (response){
+                console.log('retorno: ', response.data);
+            })
+        })
+    </script>
+</body>
+</html> 
