@@ -13,7 +13,7 @@
     <script type="text/javascript">
         $(function() {
             const token = "IGQVJYUzZApQ013VXp6VC1rVGtwRENmNG13VFBrLUhyRDRFMmdQOUhMNU9YaFV5ek1YV0h0WVJvYUVHeVFkQmpTOE1NT2FUWVNtb3JVRXFyZA09IR0VDV29semxtejNiRzRncEU4SFo5SUNoZA2N5dlA5LQZDZD"
-            const url = "https://graph.facebook.com/me/media?access_token=" + token + "&fields=media_url,media_type,caption,permalink";
+            const url = "https://api.instagram.com/me/media?access_token=" + token + "&fields=media_url,media_type,caption,permalink";
         
             $.get(url).then(function (response){
                 console.log('retorno: ', response.data);
