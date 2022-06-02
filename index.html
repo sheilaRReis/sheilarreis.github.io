@@ -13,24 +13,24 @@
     <script type="text/javascript">
 	 
                $(function() {
-			const token = "IGQVJYUzZApQ013VXp6VC1rVGtwRENmNG13VFBrLUhyRDRFMmdQOUhMNU9YaFV5ek1YV0h0WVJvYUVHeVFkQmpTOE1NT2FUWVNtb3JVRXFyZA09IR0VDV29semxtejNiRzRncEU4SFo5SUNoZA2N5dlA5LQZDZD"
-                        const url = "https://api.instagram.com/me/media?access_token=" + token + "&callback=https://sheilarreis.github.io/index.html&fields=media_url,media_type,caption,permalink";
-			var settings = {
-			  'cache': false,
-			  'dataType': "jsonp",
-			  "async": true,
-			  "crossDomain": true,
-			  "url": url,
-			  "method": "GET",
-			  "headers": {
-				  "accept": "application/json",
-				  "Access-Control-Allow-Origin":"*"
-			           }
-		  	 }  
-			$.ajax(settings).done(function (response) {
-			    console.log(response);
+					const token = "IGQVJYUzZApQ013VXp6VC1rVGtwRENmNG13VFBrLUhyRDRFMmdQOUhMNU9YaFV5ek1YV0h0WVJvYUVHeVFkQmpTOE1NT2FUWVNtb3JVRXFyZA09IR0VDV29semxtejNiRzRncEU4SFo5SUNoZA2N5dlA5LQZDZD";
+					const url = "https://api.instagram.com/me/media?access_token=" + token + "&fields=media_url,media_type,caption,permalink";
+					var settings = {
+					  'cache': false,
+					  'dataType': "jsonp",
+					  "async": true,
+					  "crossDomain": true,
+					  "url": url,
+					  "method": "GET",
+					  "headers": {
+						  "accept": "application/json",
+						  "Access-Control-Allow-Origin":"*"
+							   }
+					};
+					$.ajax(settings).done(function (response) {
+						console.log(response);
 
-		        });
+					});
 		})
     </script>
 </body>
