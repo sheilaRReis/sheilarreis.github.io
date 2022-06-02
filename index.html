@@ -26,7 +26,11 @@
 				  "accept": "application/json",
 				  "Access-Control-Allow-Origin":"*"
 			           }
-		  	 }        
+		  	 }  
+			$.ajax(settings).done(function (response) {
+			    console.log(response);
+
+		        });
 		})
     </script>
 </body>
