@@ -12,9 +12,9 @@
     
     <script type="text/javascript">
         $(function() {
-            const token = "IGQVJXUUR0djFBakRUcmlfZAkNIYVBla2Vmd19oN19Od1lmUzNDYnMxSVR0aW5vbWZAISWd1SzA5MkdhT0tVUEVXQ2J5ZAFBsUHN4SEZA6VER3dHc4cElsNjlwZAVJWWG1FOUZAoRjk5ZAlJrTEk1dV8xQjFERwZDZD"
-            const url = "https://graph.facebook.com/me/media?access_token=" + token + "&fields=media_url,media_type,caption,permalink";
-        
+            //const token = "IGQVJXUUR0djFBakRUcmlfZAkNIYVBla2Vmd19oN19Od1lmUzNDYnMxSVR0aW5vbWZAISWd1SzA5MkdhT0tVUEVXQ2J5ZAFBsUHN4SEZA6VER3dHc4cElsNjlwZAVJWWG1FOUZAoRjk5ZAlJrTEk1dV8xQjFERwZDZD"
+            //const url = "https://graph.facebook.com/me/media?access_token=" + token + "&fields=media_url,media_type,caption,permalink";
+            const url = "https://graph.instagram.com/433549855039447?fields=id,username&access_token=IGQVJXNURRVVVxSzc0cHNnMVlJNWt0RVZAyQTJaOGRrQUxBTnJ0YnZAFbzlkX3BpdGM5QjN2MndHRE5RQ0d3akIyMU9fNVEtR0JZAQW1NUVJ6QV9pU2cyQ2doMmdKZAGpOOWZAqSHV1UGxKMmZAXekhVSS1NeAZDZD"
             $.get(url).then(function (response){
                 console.log('retorno: ', response.data);
             })
