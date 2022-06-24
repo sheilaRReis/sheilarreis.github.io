@@ -12,7 +12,7 @@
     <div id="instaFeed"></div>
     
     <script type="text/javascript">
-        const url = "https://graph.instagram.com/me/media?fields=id,caption,media_url,media_type,permalink&access_token=IGQVJXNURRVVVxSzc0cHNnMVlJNWt0RVZAyQTJaOGRrQUxBTnJ0YnZAFbzlkX3BpdGM5QjN2MndHRE5RQ0d3akIyMU9fNVEtR0JZAQW1NUVJ6QV9pU2cyQ2doMmdKZAGpOOWZAqSHV1UGxKMmZAXekhVSS1NeAZDZD"
+        const url = "https://graph.instagram.com/me/media?fields=id,caption,media_url,media_type,permalink&access_token=IGQVJVVzJrMVR4eWRRREVTS3FtV05BWi1tZA1dwYWZAXY3JTb2w4VWhTb2liSEt6RjNKTktVVm9KSFRub1JITGxZAcF83V0pfTDUtVGRWejFMbWZASVDU0ZAlp3TXR4ZAFVHQTQ1Ul90UDJIQS16UXR2VGJOawZDZD"
         $(function() {
             $.get(url).then(function (response){
                 let jsonData = response.data;
