@@ -11,7 +11,7 @@
 <body>
     
     <script type="text/javascript">
-        const url = "https://graph.instagram.com/me?fields=id,username&access_token=IGQVJXNURRVVVxSzc0cHNnMVlJNWt0RVZAyQTJaOGRrQUxBTnJ0YnZAFbzlkX3BpdGM5QjN2MndHRE5RQ0d3akIyMU9fNVEtR0JZAQW1NUVJ6QV9pU2cyQ2doMmdKZAGpOOWZAqSHV1UGxKMmZAXekhVSS1NeAZDZD"
+        const url = "https://graph.instagram.com/me/media?fields=id,caption,media_url&access_token=IGQVJXNURRVVVxSzc0cHNnMVlJNWt0RVZAyQTJaOGRrQUxBTnJ0YnZAFbzlkX3BpdGM5QjN2MndHRE5RQ0d3akIyMU9fNVEtR0JZAQW1NUVJ6QV9pU2cyQ2doMmdKZAGpOOWZAqSHV1UGxKMmZAXekhVSS1NeAZDZD"
         $(function() {
             $.get(url).then(function (response){
                 console.log('retorno: ', response.data);
